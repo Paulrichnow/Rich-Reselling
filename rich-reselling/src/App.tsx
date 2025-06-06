@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import  { useEffect } from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  useEffect(() => {
+  fetch("http://localhost:5001/api/richreselling/ping") // or 5001 if HTTPS
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("Response from backend:", data);
+    })
+    .catch((err) => {
+      console.error("Error calling backend:", err);
+    });
+}, []);
+
+return <div>Hello World</div>
 }
 
 export default App;
