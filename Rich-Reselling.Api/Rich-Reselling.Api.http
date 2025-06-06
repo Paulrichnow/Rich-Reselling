@@ -1,0 +1,6 @@
+@Rich_Reselling.Api_HostAddress = http://localhost:5283
+
+GET {{Rich_Reselling.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
