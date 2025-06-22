@@ -1,19 +1,17 @@
-import  { useEffect } from 'react';
-import './App.css';
+import './App.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home/home';
+import Banner from './Banner/banner';
 
 function App() {
-  useEffect(() => {
-  fetch("http://localhost:5001/api/richreselling/ping") // or 5001 if HTTPS
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("Response from backend:", data);
-    })
-    .catch((err) => {
-      console.error("Error calling backend:", err);
-    });
-}, []);
-
-return <div>Hello World</div>
+  return (
+    <Router>
+      <Banner />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
