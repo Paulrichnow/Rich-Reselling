@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rich-Reselling.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e23198c6966bb3ddafca789912a74642cbbd76dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d89f0f980cfe1ab697fd644c9bc355f52b44a6a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rich-Reselling.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rich-Reselling.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
